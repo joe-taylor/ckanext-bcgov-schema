@@ -45,4 +45,4 @@ In order for your database migration to have a visible effect, you'll want to re
     
     % source ./venv/bin/activate
     
-    % paster --plugin=ckan search-index rebuild -c conf/ckan.ini
+    (venv) % paster --plugin=ckan search-index rebuild -c conf/ckan.ini
