@@ -21,7 +21,7 @@ This tool is configured using the following environment variables:
 
 ## Usage
 
-Install dependencies using `node ci`, configure the environment variables using your method of choice, and then use a suitable version of node (< 14) on index.js.
+Install dependencies using `node ci`, configure environment variables using your method of choice, and then use a suitable version of node (< 14) on index.js.
     
     % node ci
     % node -v
