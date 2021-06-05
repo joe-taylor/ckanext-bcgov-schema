@@ -24,6 +24,16 @@ This tool is configured using the following environment variables:
 Install dependencies using `node ci`, configure environment variables using your method of choice, and then use a suitable version of node (< 14) on index.js.
     
     % node ci
+    
     % node -v
     v13.14.0
+    
     % DB_USER=example DB_NAME=exampledb DB_PASS=supersecret node index.js
+    {
+      user: 'example',
+      host: '127.0.0.1',
+      database: 'exampledb',
+      password: 'supersecret',
+      port: 5432
+    }
+    Progress: 0.1%    
