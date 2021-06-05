@@ -1,6 +1,6 @@
 # Schema migration tool
 
-This script is a one-off to make updates to the DataBC Catalogue's schema in a pre-existing database.
+This script is a one-off update tool for the DataBC Catalogue's CKAN schema. It's meant to be applied to a preexisting postgres database.
 
 ## Requirements
 
@@ -9,4 +9,5 @@ issues with its `pg` library dependency. It has been tested with node v13.14.0.
 
 ## Usage
 
-`node index.js`
+    node ci
+    node index.js
