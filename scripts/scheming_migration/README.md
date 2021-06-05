@@ -37,3 +37,12 @@ Install dependencies using `node ci`, configure environment variables using your
       port: 5432
     }
     Progress: 0.1%    
+    
+In order for your database migration to have a visible effect, you'll want to reindex solr as well. Documenting that process is out of scope for this README (mainly because it depends on how ckan was set up) but for a [terraformed local dev environment](https://github.com/bcgov/ckan-bcgov-terraform) it will look something like this:
+
+    % pwd
+    ~/ckan-bcgov-terraform/src
+    
+    % source ./venv/bin/activate
+    
+    % paster --plugin=ckan search-index rebuild -c conf/ckan.ini
